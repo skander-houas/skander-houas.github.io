@@ -20,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
  import { PaginatorModule } from 'primeng/paginator';
  import { DataViewModule, DataViewLayoutOptions } from 'primeng/dataview';
  import { DialogModule } from 'primeng/dialog';
-  
+  import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchFilterPipe } from './search-filter.pipe';
  @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { AppRoutingModule } from './app-routing.module';
     MenuComponent,
     ContactComponent,
     FooterComponent,
-    NavbarComponent
+    NavbarComponent,
+    SearchFilterPipe
     
  
   ],
@@ -38,7 +40,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    BreadcrumbModule,TabViewModule,RatingModule,TagModule,TableModule,PaginatorModule,DataViewModule,DialogModule, 
+    BreadcrumbModule,TabViewModule,RatingModule,TagModule,TableModule,PaginatorModule,DataViewModule,DialogModule,Ng2SearchPipeModule
 
   ],
   providers: [ProductService],

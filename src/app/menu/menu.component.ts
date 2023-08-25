@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { Product } from '../domain/products';
 import { ProductService } from '../service/productservice';
-
+import { Ng2SearchPipeModule } from 'ng2-search-filter'; // Import Ng2SearchPipeModule
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -13,7 +13,8 @@ export class MenuComponent {
   products!: Product[];
   dialogVisible: boolean = false;
   items: MenuItem[] | any;
-
+  nameFilter: string = '';
+  searchTerm: string = '';
   home: MenuItem | any;
 
   constructor(private productService: ProductService) {}
