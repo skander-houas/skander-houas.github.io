@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" style="font-weight: bold;">
+  <div class="container-fluid">
+    <a class="navbar-brand me-5" href="#" style="margin-left: 2cm;"><i> You Cafe</i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-left: 2cm;">
+        <li class="nav-item">
+          <a class="nav-link active me-5" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-5" [routerLink]="['/menu']">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-3" [routerLink]="['/contact']">Contact</a>
+        </li>
+      </ul>
+      <div class="my-2 my-lg-0 " style="margin-right: 2cm;">
+        <p-button label="Find Location on map" styleClass="p-button-rounded p-button-success"></p-button>      </div>
+    </div>
+  </div>
+</nav>
