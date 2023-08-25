@@ -5,7 +5,9 @@
 
  <div class="card">
     <div class="flex justify-content-center">
-        <button type="button" (click)="showDialog()" pButton icon="pi pi-external-link" label="View"></button>
+        <button type="button" (click)="showDialog()" pButton icon="pi pi-external-link" label="Hookah"></button>
+        <button type="button" (click)="showDialog()" pButton icon="pi pi-external-link" label="Food"></button>
+        <button type="button" (click)="showDialog()" pButton icon="pi pi-external-link" label="Hookah"></button>
     </div>
     
     <p-dialog header="Menu" filterBy="name"  filterPlaceholder="Filter by name" [resizable]="false" [modal]="true" [maximizable]="true" appendTo="body" [(visible)]="dialogVisible" [style]="{width: '705vw'}" [contentStyle]="{height: '300px'}">
@@ -18,8 +20,7 @@
                
                     <th>Country</th>
                     <th>Company</th>
-                    <th>Representative</th>
-                </tr>
+                 </tr>
             </ng-template>
             <ng-template pTemplate="body" let-customer>
                 <tr>
@@ -40,3 +41,6 @@
 
  
 </div>
+
+
+

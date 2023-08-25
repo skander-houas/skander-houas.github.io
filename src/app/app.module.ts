@@ -40,7 +40,8 @@ import { SearchFilterPipe } from './search-filter.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     ButtonModule,
-    BreadcrumbModule,TabViewModule,RatingModule,TagModule,TableModule,PaginatorModule,DataViewModule,DialogModule,Ng2SearchPipeModule
+    BreadcrumbModule,TabViewModule,RatingModule,TagModule,TableModule,PaginatorModule,DataViewModule,DialogModule,
+    Ng2SearchPipeModule
 
   ],
   providers: [ProductService],
