@@ -22,6 +22,7 @@ import { AppRoutingModule } from './app-routing.module';
  import { DialogModule } from 'primeng/dialog';
   import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { SearchFilterPipe } from './search-filter.pipe';
+import { CarouselModule } from 'primeng/carousel';
  @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,7 @@ import { SearchFilterPipe } from './search-filter.pipe';
     BrowserAnimationsModule,
     ButtonModule,
     BreadcrumbModule,TabViewModule,RatingModule,TagModule,TableModule,PaginatorModule,DataViewModule,DialogModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,CarouselModule
 
   ],
   providers: [ProductService],
